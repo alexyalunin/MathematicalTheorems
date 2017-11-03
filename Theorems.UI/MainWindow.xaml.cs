@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Theorems.Data;
 
 namespace Theorems.UI
 {
@@ -23,6 +24,10 @@ namespace Theorems.UI
         public MainWindow()
         {
             InitializeComponent();
+            using (var context = new TheoremContext())
+            {
+                context.Authors.ToList();
+            }
         }
     }
 }

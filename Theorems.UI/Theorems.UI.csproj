@@ -101,5 +101,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Theorems.Data\Theorems.Data.csproj">
+      <Project>{49C4097F-F4BA-41D0-9B9E-AC8D4DADFA58}</Project>
+      <Name>Theorems.Data</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
