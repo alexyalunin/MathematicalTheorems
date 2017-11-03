@@ -26,6 +26,7 @@ namespace Theorems.UI
             InitializeComponent();
             using (var context = new TheoremContext())
             {
+                context.Authors.ToList();
                 context.Theorems.ToArray();
             }
         }
